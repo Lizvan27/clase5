@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light bg-light" style="background-color: #3f51b5 !important;">
+    <a class="navbar-brand" href="#">
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--DYfpZirq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/990/1%2AOc2PsJ-QKOUG2I8J3HNmWQ.png" width="100" height="50" alt="">
+    </a>
+  </nav>
+
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <div class="card-title text-center">
+            <h5 id="titulo">Mi primer Contador con Angular</h5>
+        </div>
+    </div>
+    <div class="card-body text-center  mt-5">
+        <div class="col-md-12 col-12">
+            <span> {{ numero }} </span>        
+        </div>
+        <!---Accion de Operaciones con funciones-->
+        <div class="col-md-12 col- mt-12">
+
+            <button (click)=" incremento() "  class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+                Incremento<i class="zmdi zmdi-plus"></i>
+            </button> 
+            <button (click)=" decremento() "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                Decremento<i class="zmdi zmdi-minus"></i>
+            </button>
+
+        </div>
+    </div>
+</div>
